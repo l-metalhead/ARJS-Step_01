@@ -18,10 +18,12 @@
             <a-asset-item id="chest_mtl" src="Materials/Chest/Crate.mtl" crossorigin="anonymous"></a-asset-item>
         </a-assets>
 
-        <a-entity id="chest" obj-model="obj: #chest_obj; mtl: #chest_mtl" position="0 0.5 0" rotation="-70 0 0" scale=".005 .005 .005"></a-entity>
-        
-        
-        <a-marker-camera preset="hiro"></a-marker-camera>
+        <a-marker preset="hiro">
+            <a-entity id="chest" obj-model="obj: #chest_obj; mtl: #chest_mtl" position="0 0.5 0" rotation="-70 0 0" scale=".005 .005 .005"></a-entity>
+        </a-marker>
+
+
+        <a-camera></a-camera>
     </a-scene>
 </body>
 </html>
